@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: rgba(50, 50, 218, 0.858);
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.8;
+}
