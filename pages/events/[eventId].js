@@ -7,7 +7,7 @@ function EventDetails() {
   console.log(router.query);
   console.log(eventId);
   const event = getEventById(eventId);
-
+  console.log(event);
   return (
     <div>
       <EventDetail
