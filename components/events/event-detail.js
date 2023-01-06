@@ -3,7 +3,7 @@ import Button from "../button/button";
 import classes from "./event-detail.module.css";
 
 function EventDetail(props) {
-  const { title, image, location, date, id } = props;
+  const { title, image, location, date, desc, id } = props;
   const humanReadibleDate = new Date(date).toLocaleDateString();
   const formattedAddress = location.replace(", ", "\n");
   const exploreLink = `/events/${id}`;
@@ -13,6 +13,7 @@ function EventDetail(props) {
       <div className={classes.content}>
         <div>
           <h2>{title}</h2>
+          <p>{desc}</p>
         </div>
         <div>
           <div>
@@ -20,9 +21,6 @@ function EventDetail(props) {
           </div>
           <div>
             <address>{formattedAddress}</address>
-          </div>
-          <div className={classes.btn}>
-            <Button to={exploreLink}>Explore event</Button>
           </div>
         </div>
       </div>

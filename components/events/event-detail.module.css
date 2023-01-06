@@ -1,8 +1,9 @@
 .item {
   width: 40%;
-  height: 400px;
+  /* height: 440px; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 30px auto;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.186);
@@ -19,10 +20,4 @@
   position: relative;
   width: 100%;
   padding: 20px;
-}
-
-.btn {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
 }

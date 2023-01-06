@@ -4,10 +4,7 @@ import { getEventById } from "../../dummy-data";
 function EventDetails() {
   const router = useRouter();
   const eventId = router.query.eventId;
-  console.log(router.query);
-  console.log(eventId);
   const event = getEventById(eventId);
-  console.log(event);
   return (
     <div>
       <EventDetail
@@ -16,6 +13,7 @@ function EventDetails() {
         title={event.title}
         location={event.location}
         date={event.date}
+        desc={event.desc}
       />
     </div>
   );
