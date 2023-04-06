@@ -1,7 +1,11 @@
 .header {
-  width: 80%;
+  position: sticky;
+  top: 0;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(209, 237, 248, 0.886);
+  z-index: 999;
 }

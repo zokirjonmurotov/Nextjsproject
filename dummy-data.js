@@ -4,7 +4,7 @@ const DummyEvents = [
     title: "programming",
     desc: "bu yerda qandaydir inglizcha gap bo'lishi kerak edi",
     location: "Amir Temur ko'chasi ",
-    date: "2022-05-12",
+    date: "2022-02-12",
     image: "images/nimadir.jpg",
     isFeatured: true,
   },
@@ -13,7 +13,7 @@ const DummyEvents = [
     title: "programming2",
     desc: "bu yerda qandaydir inglizcha gap bo'lishi kerak edi",
     location: "Amir Temur ko'chasi ",
-    date: "2022-05-12",
+    date: "2022-01-12",
     image: "images/mushuk.jpg",
     isFeatured: false,
   },
@@ -22,7 +22,7 @@ const DummyEvents = [
     title: "programming3",
     desc: "bu yerda qandaydir inglizcha gap bo'lishi kerak edi3",
     location: "Amir Temur ko'chasi 3",
-    date: "2022-05-12",
+    date: "2022-03-12",
     image: "images/jirafa.jpg",
     isFeatured: false,
   },
@@ -58,7 +58,7 @@ export function getFilteredEvents(dateFilter) {
   const { year, month } = dateFilter;
   let filteredEvents = DummyEvents.filter((event) => {
     const eventDate = new Date(event.date);
-    return eventDate.getFullYear() === year && eventDate.getMonth === month - 1;
+    return eventDate.getFullYear() == year && eventDate.getMonth() == month - 1;
   });
   return filteredEvents;
 }

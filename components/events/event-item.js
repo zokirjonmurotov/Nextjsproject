@@ -1,5 +1,5 @@
 import Button from "../button/button";
-
+import Image from "next/image";
 import classes from "./event-item.module.css";
 
 function EventItem(props) {
@@ -9,7 +9,16 @@ function EventItem(props) {
   const exploreLink = `/events/${id}`;
   return (
     <li className={classes.item}>
-      <img src={"/" + image} alt={title} />
+      <div className={classes.image}>
+        <Image
+          width="100%"
+          height="100%"
+          layout="responsive"
+          src={"/" + image}
+          alt={title}
+          className={classes.image2}
+        />
+      </div>
       <div className={classes.content}>
         <div>
           <h2>{title}</h2>
