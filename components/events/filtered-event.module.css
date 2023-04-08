@@ -9,7 +9,7 @@
 }
 .form select {
   all: unset;
-  border: 1px solid #000;
+  border: 1px solid #000000d6;
   border-radius: 20px;
   padding: 5px 18px;
 }

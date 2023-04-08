@@ -42,7 +42,7 @@ const DummyEvents = [
     location: "Amir Temur ko'chasi 3423",
     date: "2022-01-22",
     image: "images/jirafa.jpg",
-    isFeatured: true,
+    isFeatured: false,
   },
 ];
 
