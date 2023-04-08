@@ -5,6 +5,9 @@ function EventDetails() {
   const router = useRouter();
   const eventId = router.query.eventId;
   const event = getEventById(eventId);
+  if (!event) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <div>
       <EventDetail

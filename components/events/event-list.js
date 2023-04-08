@@ -2,6 +2,10 @@ import EventItem from "./event-item";
 
 function EventList(props) {
   const { items } = props;
+
+  if (!items) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <ul>
       {items.map((item) => (
